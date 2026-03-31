@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>js counter</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1> js counter App</h1>
+<img src="shamsu.png">
+<p id="count" style="font-size:40px;">0</p>
+<button onclick="increasecount()">+</button>
+<button onclick="decreasecount()">-</button>
+<button onclick="resetcount()">Reset</button>
+<footer>
+<p>copyright&copy:2026 by shamsudeen ibrahim</p>
+
+</footer>
+<style>
+button {
+background-color:red;
+border-radius:40px;
+}
+h1 {
+color:blue;
+margin:8px;
+padding:7px;
+}
+img {
+  width:100px;
+  height:150px;
+border-radius: 100px;
+}
+footer {
+  color:red;
+  
+}
+</style>
+<script>
+let count = 0;
+function updatecount() {
+document.getElementById("count").innerHTML = count;
+}
+function increasecount() {
+count++;
+updatecount();
+}
+function decreasecount() {
+count--;
+updatecount();
+}
+function resetcount() {
+count = 0;
+updatecount();
+}
+</script>
+</body>
+</html>
